@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="controlsfx-8.40.11">
+    <CLASSES>
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/controlsfx-8.40.11.jar!/" />
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/fontawesomefx-commons-8.12.jar!/" />
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/fontawesomefx-fontawesome-4.6.3.jar!/" />
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/fontawesomefx-glyphsbrowser.jar!/" />
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/fontawesomefx-icons525-2.6.0.jar!/" />
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/fontawesomefx-materialdesignfont-1.6.50.jar!/" />
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/fontawesomefx-materialicons-2.2.0.jar!/" />
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/fontawesomefx-octicons-4.3.0.jar!/" />
+      <root url="jar://D:/ADMAX STUFF/SOFTWARES AND GAMES/fontawesomefx-glyphsbrowser/lib/fontawesomefx-weathericons-2.0-3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
