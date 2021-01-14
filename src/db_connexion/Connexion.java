@@ -60,7 +60,7 @@ public class Connexion {
         return null;
 
     }
-    public static Connection getConnecter(String login,String password,String port,String instance) {
+    public static Connection getConnecter(String login,String password,String instance,String port) {
         //String url = "jdbc:oracle:thin:@localhost:1521:orcl";
         String url = "jdbc:oracle:thin:@localhost:"+port+":"+instance;
         Connection cn = null;

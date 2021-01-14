@@ -81,6 +81,9 @@
     /*-fx-background-color: #ec4646;*/
     -fx-background-color: linear-gradient(TO right,#e80018, #e87682);
 }
+.bg_dash_nav{
+-fx-background-color: linear-gradient(TO left,#e80018, #e87682);
+}
 .text_btn_side_dash{
     -fx-text-fill: #e1e1e1 ;
 }
@@ -103,4 +106,13 @@
     -fx-font-family: "Arial";
     -fx-text-fill: linear-gradient(To right,#d5d5d5, #e7e7e7);
     -fx-font-size: 20px;
+}
+.text_username{
+-fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
 }

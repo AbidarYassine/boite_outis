@@ -48,7 +48,7 @@
                     </children></HBox>
                 <HBox prefHeight="100.0" prefWidth="200.0">
                     <children>
-                        <Button mnemonicParsing="false" onAction="#gotoDashboard" prefHeight="50.0" prefWidth="262.0" styleClass="btn_dash1">
+                        <Button mnemonicParsing="false" onAction="#goToCreateRole" prefHeight="50.0" prefWidth="262.0" styleClass="btn_dash1">
                             <graphic>
                                 <Label styleClass="text_btn_side_dash" text="Creer Rôle">
                                     <font>

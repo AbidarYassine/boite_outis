@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="64.0" prefWidth="938.0" styleClass="bg_dash_nav" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NavController">
+   <children>
+      <Text fx:id="username_nav" fill="WHITE" layoutX="791.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_username" text="Username" />
+      <MaterialDesignIconView fill="#194db5" glyphName="ACCOUNT_CIRCLE" layoutX="884.0" layoutY="46.0" size="40" />
+   </children>
+</AnchorPane>
