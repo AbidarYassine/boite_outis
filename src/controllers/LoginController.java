@@ -9,17 +9,20 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import lancher.Main;
 import services.LoginService;
+import utils.AlertUtil;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
-    String mode[] = {"Normal", "SYSDBA"};
+    String[] mode = {"Normal", "SYSDBA"};
     ObservableList observableList = FXCollections.observableArrayList();
     // create a choiceBox
     @FXML
@@ -39,33 +42,39 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loadDataIntoChoiceBox();
+        port.setText("1521");
     }
 
     @FXML
     public void clickBtn(ActionEvent event) {
-        if(validationInput()){
+        if (validationInput()) {
             String role = select_mode.getValue();
             String inst = instance.getText();
-            String port_ = port.getText();
-            boolean status = loginService.login(login_tv.getText().toString(), password_tv.getText(), role,inst,port_);
-            if (status) {
-                System.out.println("oki you are login");
-            } else {
-                System.out.println("not login");
+            String port_c = port.getText();
+            try {
+                boolean status = loginService.login(login_tv.getText(), password_tv.getText(), role, inst, port_c);
+                if (status) {
+                    Main.forward(event, "../view/Accueil.fxml", this.getClass());
+                } else {
+                    System.out.println("not login");
+                }
+            } catch (Exception e) {
+                AlertUtil.ShowAlert("Erreur", e.getLocalizedMessage(), Alert.AlertType.ERROR);
+                System.out.println(" errue " + e.getLocalizedMessage());
             }
-        }
 
+
+        }
 
 
     }
 
 
     private boolean validationInput() {
-        if (login_tv.getText().isEmpty() || password_tv.getText().isEmpty() || select_mode.getValue().isEmpty()) {
-            buttn_login.setDisable(false);
+        if (login_tv.getText().isEmpty() || password_tv.getText().isEmpty() || select_mode.getValue().isEmpty()
+                || port.getText().isEmpty() || instance.getText().isEmpty()) {
             return false;
         } else {
-            buttn_login.setDisable(false);
             return true;
         }
 

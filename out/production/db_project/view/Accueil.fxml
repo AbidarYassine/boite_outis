@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="915" prefWidth="1277.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccueilController">
+    <fx:include fx:id="sideBar" source="SideBar.fxml" />
+   <JFXButton layoutX="577.0" layoutY="395.0" onAction="#cree_role" prefHeight="31.0" prefWidth="300.0" text="Cree role" />
+</AnchorPane>

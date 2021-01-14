@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="250.0" styleClass="bg_dash_side" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SideBarController">
+    <children>
+        <VBox prefHeight="915" prefWidth="262.0" styleClass="sidebar">
+            <children>
+                <Label prefHeight="34.0" prefWidth="266.0" styleClass="header" text="Gestion des Rôles" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Ebrima Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="25.0" left="50.0" right="25.0" top="25.0" />
+                    </padding></Label>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#gotoDashboard" prefHeight="50.0" prefWidth="262.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Acceuil">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="VIEW_GRID" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children></HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#gotoDashboard" prefHeight="50.0" prefWidth="262.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Creer Rôle">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="LIBRARY_PLUS" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children></HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#gotoAlterRole" prefHeight="50.0" prefWidth="262.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Modifier Rôle">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="RENAME_BOX" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#gotoGrantRole" prefHeight="50.0" prefWidth="266.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Accorder Rôle">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_NETWORK" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="264.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Activer/Désacticer Rôle">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="CONTRAST_CIRCLE" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="265.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Attribuer Rôle par defaut">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="CONTENT_DUPLICATE" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="268.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Retirer Rôle">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="LAYERS_OFF" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="265.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Rechercher Rôle">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="MAGNIFY" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="271.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Supprimer Rôle">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="DELETE" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#disconnect" prefHeight="53.0" prefWidth="271.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Deconnexion">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="LOGOUT" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+   <stylesheets>
+      <URL value="@../css/style.css" />
+   </stylesheets>
+</AnchorPane>
