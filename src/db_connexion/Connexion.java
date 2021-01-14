@@ -8,7 +8,7 @@ public class Connexion {
     public static Connection getConnecterAsDba() {
         String url = "jdbc:oracle:thin:@localhost:1521:orcl";
         String login = "sys as sysdba";
-        String passwd = "YASSine1998";
+        String passwd = "system";
         Connection cn = null;
         try {
 
@@ -38,8 +38,8 @@ public class Connexion {
 
     public static Connection getConnecter() {
         String url = "jdbc:oracle:thin:@localhost:1521:orcl";
-        String login = "system";
-        String passwd = "YASSine1998";
+        String login = "sys";
+        String passwd = "system";
         Connection cn = null;
         try {
 
@@ -60,8 +60,9 @@ public class Connexion {
         return null;
 
     }
-    public static Connection getConnecter(String login,String password) {
-        String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+    public static Connection getConnecter(String login,String password,String port,String instance) {
+        //String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+        String url = "jdbc:oracle:thin:@localhost:"+port+":"+instance;
         Connection cn = null;
         try {
 

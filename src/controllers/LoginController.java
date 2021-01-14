@@ -29,6 +29,10 @@ public class LoginController implements Initializable {
     @FXML
     JFXPasswordField password_tv;
     @FXML
+    JFXTextField instance;
+    @FXML
+    JFXTextField port;
+    @FXML
     JFXButton buttn_login;
     LoginService loginService = new LoginService();
 
@@ -41,7 +45,9 @@ public class LoginController implements Initializable {
     public void clickBtn(ActionEvent event) {
         if(validationInput()){
             String role = select_mode.getValue();
-            boolean status = loginService.login(login_tv.getText().toString(), password_tv.getText(), role);
+            String inst = instance.getText();
+            String port_ = port.getText();
+            boolean status = loginService.login(login_tv.getText().toString(), password_tv.getText(), role,inst,port_);
             if (status) {
                 System.out.println("oki you are login");
             } else {
