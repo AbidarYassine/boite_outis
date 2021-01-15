@@ -21,7 +21,7 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.setTitle("dba toolbox");
-//        primaryStage.initStyle(StageStyle.DECORATED);
+//      primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.setMaximized(false);
         primaryStage.centerOnScreen();
         primaryStage.setResizable(false);
