@@ -8,11 +8,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import lancher.Main;
 import services.LoginService;
 import utils.AlertUtil;
@@ -54,13 +60,23 @@ public class LoginController implements Initializable {
             try {
                 boolean status = loginService.login(login_tv.getText(), password_tv.getText(), role, inst, port_c);
                 if (status) {
-                    Main.forward(event, "../view/Accueil.fxml", this.getClass());
+                    FXMLLoader loader = new FXMLLoader();
+                    loader.setLocation(getClass().getResource("../view/Accueil.fxml"));
+                    Parent root = loader.load();
+                    Scene scene = new Scene(root);
+//                    AccueilController controller = loader.getController();
+//                    AccueilController.setUsername_nav("test dsksbkj");
+                    Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    window.setTitle("Accueil");
+                    window.setScene(scene);
+                    window.sizeToScene();
+                    window.show();
                 } else {
                     System.out.println("not login");
                 }
             } catch (Exception e) {
                 AlertUtil.ShowAlert("Erreur", e.getLocalizedMessage(), Alert.AlertType.ERROR);
-                System.out.println(" errue " + e.getLocalizedMessage());
+                System.out.println(" errue " + e.getLocalizedMessage() + " " + e.getCause());
             }
 
 

@@ -9,26 +9,18 @@ import java.sql.Statement;
 public class RoleDao {
     static Connection conection = Connexion.getConnection();
 
-    public static String creeRole(String role_name) {
+    public static String creeRole(String role_name) throws Exception {
         Statement statement = null;
         String result = "";
-        try {
-            if (conection != null) {
-                statement = conection.createStatement();
-                statement.executeUpdate("CREATE ROLE test_role2");
-                result = "Success";
+        if (conection != null) {
+            statement = conection.createStatement();
+            statement.executeUpdate("CREATE ROLE test_role3");
+            if (statement != null) {
+                statement.close();
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            result = e.getMessage();
-        } finally {
-            try {
-                if (statement != null) {
-                    statement.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            result = "Success";
+        } else {
+            result = "error";
         }
         return result;
 
