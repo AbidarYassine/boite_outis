@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="918.0" prefWidth="262.0" styleClass="bg_dash_side" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SideBarController">
+<AnchorPane prefHeight="760.0" prefWidth="262.0" styleClass="bg_dash_side" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SideBarController">
     <children>
-        <VBox alignment="CENTER" prefHeight="918.0" prefWidth="262.0" styleClass="sidebar">
+        <VBox alignment="CENTER" prefHeight="760.0" prefWidth="262.0" styleClass="sidebar">
             <children>
                 <Label prefHeight="34.0" prefWidth="266.0" styleClass="header" text="Gestion des Rôles" textAlignment="CENTER" textFill="WHITE">
                     <font>
@@ -48,7 +48,7 @@
                     </children></HBox>
                 <HBox prefHeight="79.0" prefWidth="262.0">
                     <children>
-                        <Button mnemonicParsing="false" onAction="#gotoDashboard" prefHeight="75.0" prefWidth="262.0" styleClass="btn_dash1">
+                        <Button mnemonicParsing="false" onAction="#goToCreateRole" prefHeight="75.0" prefWidth="262.0" styleClass="btn_dash1">
                             <graphic>
                                 <Label styleClass="text_btn_side_dash" text="Creer Rôle">
                                     <font>
@@ -135,7 +135,7 @@
                 </HBox>
                 <HBox prefHeight="80.0" prefWidth="262.0">
                <children>
-                        <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="262.0" styleClass="btn_dash1">
+                        <Button mnemonicParsing="false" onAction="#goToRechercherRole" prefHeight="74.0" prefWidth="262.0" styleClass="btn_dash1">
                             <graphic>
                                 <Label styleClass="text_btn_side_dash" text="Rechercher Rôle">
                                     <font>

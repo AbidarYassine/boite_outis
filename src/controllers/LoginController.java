@@ -60,17 +60,7 @@ public class LoginController implements Initializable {
             try {
                 boolean status = loginService.login(login_tv.getText(), password_tv.getText(), role, inst, port_c);
                 if (status) {
-                    FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(getClass().getResource("../view/Accueil.fxml"));
-                    Parent root = loader.load();
-                    Scene scene = new Scene(root);
-//                    AccueilController controller = loader.getController();
-//                    AccueilController.setUsername_nav("test dsksbkj");
-                    Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                    window.setTitle("Accueil");
-                    window.setScene(scene);
-                    window.sizeToScene();
-                    window.show();
+                    Main.forward(event, "../view/Accueil.fxml", this.getClass(),"Accueil");
                 } else {
                     System.out.println("not login");
                 }

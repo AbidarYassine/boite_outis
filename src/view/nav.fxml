@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="77.0" prefWidth="1067.0" styleClass="bg_dash_nav" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NavController">
+<AnchorPane prefHeight="77.0" prefWidth="1063.0" styleClass="bg_dash_nav" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NavController">
    <children>
       <Text fx:id="username_nav" fill="WHITE" layoutX="913.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_username" text="Username" />
       <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_CIRCLE" layoutX="1013.0" layoutY="55.0" size="40" />

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="761.0" prefWidth="1320.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateRoleController">
+   <children>
+      <AnchorPane layoutX="257.0" layoutY="76.0" prefHeight="685.0" prefWidth="1066.0">
+         <children>
+            <ImageView fitHeight="686.0" fitWidth="1066.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../drawable/bg_dsh1-01.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="cr_role_name" labelFloat="true" layoutX="66.0" layoutY="100.0" prefHeight="25.0" prefWidth="254.0" promptText="nom de role à créer" styleClass="text_field_v2_1" AnchorPane.leftAnchor="60.0" />
+            <JFXComboBox fx:id="cr_role_identified" labelFloat="true" layoutX="64.0" layoutY="173.0" prefHeight="25.0" prefWidth="140.0" promptText="Role identifié" styleClass="text_field_v2_1" AnchorPane.leftAnchor="60.0" />
+            <JFXRadioButton fx:id="cr_role_rb_password" layoutX="60.0" layoutY="248.0" styleClass="comboBox_v2_1" text="Mot de passe" />
+            <Text layoutX="60.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_2" text="identifiée par :" />
+            <JFXRadioButton fx:id="cr_role_rb_globally" layoutX="60.0" layoutY="280.0" text="Globalement" />
+            <JFXRadioButton fx:id="cr_role_rb_externally" layoutX="60.0" layoutY="311.0" text="Source externe" />
+            <JFXRadioButton fx:id="cr_role_rb_package" layoutX="60.0" layoutY="343.0" text="Application" />
+            <JFXTextField fx:id="cr_role_password_txt" labelFloat="true" layoutX="208.0" layoutY="244.0" prefHeight="25.0" prefWidth="262.0" promptText="MOT DE PASSE" styleClass="text_field_v2_1" />
+            <JFXTextField fx:id="cr_role_schema_txt" labelFloat="true" layoutX="208.0" layoutY="330.0" prefHeight="25.0" prefWidth="262.0" promptText="SCHEMA DE PACKAGE" styleClass="text_field_v2_1" />
+            <JFXTextField fx:id="cr_role_package_txt" labelFloat="true" layoutX="208.0" layoutY="375.0" prefHeight="25.0" prefWidth="262.0" promptText="PACKAGE" styleClass="text_field_v2_1" />
+            <Text fill="WHITE" layoutX="27.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_1" text="Creation de role" />
+            <JFXButton fx:id="cr_role_btn" layoutX="440.0" layoutY="532.0" onAction="#createRole" styleClass="btn_v2_1" text="Créer le role">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <CustomTextField fx:id="requette_cr_role" editable="false" layoutX="222.0" layoutY="615.0" prefHeight="27.0" prefWidth="648.0" styleClass="text_field_v2_2" text="...">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </CustomTextField>
+            <Text layoutX="187.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_2" text="Requette :" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="760.0" prefWidth="243.0">
+         <fx:include fx:id="SideBar" source="SideBar.fxml" />
+      </AnchorPane>
+      <AnchorPane layoutX="261.0" prefHeight="77.0" prefWidth="1063.0">
+         <fx:include fx:id="NavBar" source="nav.fxml" />
+      </AnchorPane>
+   </children>
+</AnchorPane>

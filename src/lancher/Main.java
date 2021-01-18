@@ -28,11 +28,12 @@ public class Main extends Application {
 
     }
 
-    public static void forward(ActionEvent actionEvent, String pageName, Class myClass) throws IOException {
+    public static void forward(ActionEvent actionEvent, String pageName, Class myClass,String title) throws IOException {
         Parent parent = FXMLLoader.load(myClass.getResource(pageName));
         Scene scene = new Scene(parent);
         Stage app_stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         app_stage.setScene(scene);
+        app_stage.setTitle(title);
         app_stage.centerOnScreen();
         app_stage.show();
 
