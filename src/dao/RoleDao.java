@@ -7,6 +7,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class RoleDao {
+    static String q;
+
+    public static String getQ() {
+        return q;
+    }
+
     static Connection conection = Connexion.getConnection();
 
     public static String creeRole(String role_name) throws Exception {
@@ -24,5 +30,13 @@ public class RoleDao {
         }
         return result;
 
+    }
+
+    public static boolean supprimerRole(String role) throws Exception {
+        q = "DROP ROLE " + role;
+        Statement statement = null;
+        statement = conection.createStatement();
+        statement.executeUpdate(q);
+        return true;
     }
 }

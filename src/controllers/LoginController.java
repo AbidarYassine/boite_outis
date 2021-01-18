@@ -23,6 +23,7 @@ import lancher.Main;
 import services.LoginService;
 import utils.AlertUtil;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -44,6 +45,7 @@ public class LoginController implements Initializable {
     @FXML
     JFXButton buttn_login;
     LoginService loginService = new LoginService();
+    boolean status = false;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -57,37 +59,30 @@ public class LoginController implements Initializable {
             String role = select_mode.getValue();
             String inst = instance.getText();
             String port_c = port.getText();
+            Thread thread_login = new Thread(() -> {
+                try {
+                    status = loginService.login(login_tv.getText(), password_tv.getText(), role, inst, port_c);
+                } catch (Exception e) {
+                    System.out.println(e.getLocalizedMessage().toString());
+                }
+            });
             try {
-                boolean status = loginService.login(login_tv.getText(), password_tv.getText(), role, inst, port_c);
+                thread_login.start();
+                thread_login.join();
                 if (status) {
-                    FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(getClass().getResource("../view/Accueil.fxml"));
-                    Parent root = loader.load();
-                    Scene scene = new Scene(root);
-//                    AccueilController controller = loader.getController();
-//                    AccueilController.setUsername_nav("test dsksbkj");
-                    Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                    window.setTitle("Accueil");
-                    window.setScene(scene);
-                    window.sizeToScene();
-                    window.show();
+                    Main.forward(event, "../view/Accueil.fxml", this.getClass());
                 } else {
                     System.out.println("not login");
                 }
-            } catch (Exception e) {
+            } catch (InterruptedException | IOException e) {
                 AlertUtil.ShowAlert("Erreur", e.getLocalizedMessage(), Alert.AlertType.ERROR);
-                System.out.println(" errue " + e.getLocalizedMessage() + " " + e.getCause());
             }
-
-
         }
-
-
     }
 
 
     private boolean validationInput() {
-        if (login_tv.getText().isEmpty() || password_tv.getText().isEmpty() || select_mode.getValue().isEmpty()
+        if (login_tv.getText().isEmpty() || password_tv.getText().isEmpty() || select_mode.getValue() == null || select_mode.getValue().isEmpty()
                 || port.getText().isEmpty() || instance.getText().isEmpty()) {
             return false;
         } else {

@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="918.0" prefWidth="262.0" styleClass="bg_dash_side" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SideBarController">
+<AnchorPane prefHeight="760.0" prefWidth="262.0" styleClass="bg_dash_side" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SideBarController">
     <children>
-        <VBox alignment="CENTER" prefHeight="918.0" prefWidth="262.0" styleClass="sidebar">
+        <VBox alignment="CENTER" prefHeight="760.0" prefWidth="262.0" styleClass="sidebar">
             <children>
                 <Label prefHeight="34.0" prefWidth="266.0" styleClass="header" text="Gestion des Rôles" textAlignment="CENTER" textFill="WHITE">
                     <font>
@@ -89,6 +89,28 @@
                         </Button>
                     </children>
                 </HBox>
+                <HBox prefHeight="77.0" prefWidth="262.0">
+               <children>
+                        <Button mnemonicParsing="false" onAction="#btn_goto_revokeScene" prefHeight="73.0" prefWidth="262.0" styleClass="btn_dash1">
+                            <graphic>
+                                <Label styleClass="text_btn_side_dash" text="Retirer Rôle">
+                                    <font>
+                                        <Font name="Calibri" size="14.0" />
+                                    </font>
+                                    <graphic>
+
+                                    </graphic>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="LAYERS_OFF" size="25" />
+                           </graphic>
+                                </Label>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+               </children>
+                </HBox>
                 <HBox prefHeight="79.0" prefWidth="262.0">
                     <children>
                         <Button mnemonicParsing="false" onAction="#gotoGrantRole" prefHeight="72.0" prefWidth="262.0" styleClass="btn_dash1">
@@ -111,31 +133,9 @@
                         </Button>
                     </children>
                 </HBox>
-                <HBox prefHeight="77.0" prefWidth="262.0">
-               <children>
-                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="262.0" styleClass="btn_dash1">
-                            <graphic>
-                                <Label styleClass="text_btn_side_dash" text="Retirer Rôle">
-                                    <font>
-                                        <Font name="Calibri" size="14.0" />
-                                    </font>
-                                    <graphic>
-
-                                    </graphic>
-                           <graphic>
-                              <MaterialDesignIconView fill="WHITE" glyphName="LAYERS_OFF" size="25" />
-                           </graphic>
-                                </Label>
-                            </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                        </Button>
-               </children>
-                </HBox>
                 <HBox prefHeight="80.0" prefWidth="262.0">
                <children>
-                        <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="262.0" styleClass="btn_dash1">
+                        <Button mnemonicParsing="false" onAction="#goto_searchWindow" prefHeight="74.0" prefWidth="262.0" styleClass="btn_dash1">
                             <graphic>
                                 <Label styleClass="text_btn_side_dash" text="Rechercher Rôle">
                                     <font>
@@ -157,7 +157,7 @@
                 </HBox>
                 <HBox prefHeight="82.0" prefWidth="262.0">
                <children>
-                        <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="262.0" styleClass="btn_dash1">
+                        <Button mnemonicParsing="false" onAction="#goto_supp_window" prefHeight="74.0" prefWidth="262.0" styleClass="btn_dash1">
                             <graphic>
                                 <Label styleClass="text_btn_side_dash" text="Supprimer Rôle">
                                     <font>

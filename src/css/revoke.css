@@ -1,0 +1,67 @@
+/*.bg_login{
+    -fx-background-image: url("../drawable/bg1.png");
+-fx-background-size: cover;
+}
+*/
+
+.btn_dash1{
+   
+    -fx-background-color: 
+        linear-gradient(#fed9f0 0%, #000000 20%, #333333 100%),
+        linear-gradient(#ffffff, #cfcfcf),
+        radial-gradient(center 50% 0%, radius 100%,#39484b , #070707);
+    /*-fx-background-radius: 5,4,3,5;*/
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+
+.btn_dash1:hover{
+   
+    -fx-background-color: 
+        linear-gradient(#fed9f0 0%, #000000 20%, #333333 100%),
+        linear-gradient(#ffffff, #cfcfcf),
+        radial-gradient(center 50% 0%, radius 100%,#070707 , #39484b);
+    /*-fx-background-radius: 5,4,3,5;*/
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+
+.tab{
+        -fx-pref-height : 40;
+        -fx-max-height : 40;
+
+}
+
+.tab-header-background{
+    -fx-background-color:
+            linear-gradient(#fed9f0 0%, #000000 20%, #333333 100%),
+            linear-gradient(#ffffff, #cfcfcf),
+            radial-gradient(center 50% 0%, radius 100%,#39484b , #070707);
+    -fx-height:100px;
+
+}
+.tab-label{
+    -fx-text-fill: #fff;
+    -fx-font-size: 15pt;
+}
+.tab{
+    -fx-background-color: derive(#000, 10%);
+    -fx-padding: 5px 20px 5px 20px;
+    -fx-margin:0px 0px 10px 0px;
+}
+
+.tab:selected{
+    -fx-background-color: #e80018;
+}
+
+
