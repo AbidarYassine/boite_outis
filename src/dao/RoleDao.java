@@ -10,6 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RoleDao {
+    static String q;
+
+    public static String getQ() {
+        return q;
+    }
+
     static Connection conection = Connexion.getConnection();
 
 
@@ -101,6 +107,14 @@ public class RoleDao {
 
         return result;
 
+    }
+
+    public static boolean supprimerRole(String role) throws Exception {
+        q = "DROP ROLE " + role;
+        Statement statement = null;
+        statement = conection.createStatement();
+        statement.executeUpdate(q);
+        return true;
     }
 
     public static String grantPrevToRolesDao(List<Privilege> privs, List<Role> roles) throws Exception {
