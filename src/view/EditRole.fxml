@@ -35,12 +35,12 @@
                   <Cursor fx:constant="HAND" />
                </cursor></JFXButton>
             <JFXComboBox fx:id="cr_role_name" labelFloat="true" layoutX="60.0" layoutY="75.0" prefHeight="25.0" prefWidth="165.0" promptText="nom de role à modifier" styleClass="text_field_v2_1" />
-            <CustomTextField fx:id="requette_er_role" editable="false" layoutX="180.0" layoutY="623.0" prefHeight="27.0" prefWidth="696.0" styleClass="text_field_v2_2" text="...">
+            <CustomTextField fx:id="requette_er_role" editable="false" layoutX="180.0" layoutY="607.0" prefHeight="59.0" prefWidth="696.0" styleClass="input-sql" text="...">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </CustomTextField>
-            <Text layoutX="145.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_2" text="Requette :" />
+            <Text layoutX="145.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_2" text="Requette :" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="760.0" prefWidth="243.0">

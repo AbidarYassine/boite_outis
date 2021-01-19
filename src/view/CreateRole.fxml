@@ -35,12 +35,12 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></JFXButton>
-            <CustomTextField fx:id="requette_cr_role" editable="false" layoutX="222.0" layoutY="615.0" prefHeight="27.0" prefWidth="648.0" styleClass="text_field_v2_2" text="...">
+            <CustomTextField fx:id="requette_cr_role" editable="false" layoutX="222.0" layoutY="603.0" prefHeight="59.0" prefWidth="648.0" styleClass="input-sql" text="...">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </CustomTextField>
-            <Text layoutX="187.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_2" text="Requette :" />
+            <Text layoutX="187.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_2" text="Requette :" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="760.0" prefWidth="243.0">

@@ -26,18 +26,18 @@
                         <Image url="@../drawable/bg_dsh1-01.png" />
                     </image>
                 </ImageView>
-                <Text fill="#eb0909" layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suppression Rôle" wrappingWidth="381.9384765625">
+                <Text fill="#eb0909" layoutX="50.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_1" text="Suppression Rôle" wrappingWidth="381.9384765625" AnchorPane.leftAnchor="50.0">
                     <font>
                         <Font name="System Bold" size="40.0" />
                     </font>
                 </Text>
             <JFXListView fx:id="listView_role" layoutX="63.0" layoutY="158.0" prefHeight="400.0" prefWidth="322.0" />
             <JFXListView fx:id="listView_user" layoutX="432.0" layoutY="154.0" prefHeight="400.0" prefWidth="332.0" />
-            <JFXButton fx:id="btn_delete_role" disable="true" layoutX="795.0" layoutY="333.0" onAction="#delete_role" prefHeight="43.0" prefWidth="227.0" style="-fx-background-radius: 30px;" styleClass="btn_dash1" text="Supprimer Rôle" />
+            <JFXButton fx:id="btn_delete_role" disable="true" layoutX="795.0" layoutY="333.0" onAction="#delete_role" prefHeight="43.0" prefWidth="227.0" style="-fx-background-radius: 30px;" styleClass="btn_v2_1" text="Supprimer Rôle" />
             <TextField fx:id="tf_search_role" layoutX="63.0" layoutY="112.0" prefHeight="31.0" prefWidth="322.0" promptText="Chercher Rôle" />
             <MaterialDesignIconView fx:id="iconDelete" disable="true" fill="WHITE" glyphName="DELETE" layoutX="980.0" layoutY="363.0" size="25" textAlignment="CENTER" />
             <TextField fx:id="show_sql_tf" alignment="CENTER" editable="false" layoutX="63.0" layoutY="584.0" prefHeight="77.0" prefWidth="701.0" styleClass="input-sql" visible="false" />
-            <Text layoutX="504.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role &amp;&amp; user" wrappingWidth="165.37744140625">
+            <Text layoutX="515.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_Title_v2_2" text="Role &amp;&amp; user" textAlignment="CENTER" wrappingWidth="165.37744140625">
                <font>
                   <Font name="System Bold Italic" size="25.0" />
                </font>

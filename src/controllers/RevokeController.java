@@ -202,6 +202,7 @@ public class RevokeController implements Initializable {
         StringBuilder q = new StringBuilder();
         q.append("REVOKE ");
         List<String> list_privilige = list_privil_comboBox.getCheckModel().getCheckedItems();
+//        list_privil_comboBox.getCheckModel().clearChecks();
         if (list_privilige.size() > 0) {
             for (int i = 0; i < list_privilige.size(); i++) {
                 if (i != list_privilige.size() - 1) {
@@ -215,17 +216,15 @@ public class RevokeController implements Initializable {
             try {
                 RevokeDao.revokeRole(q.toString());
                 show_sql.setVisible(true);
-                list_privil_comboBox.getItems().clear();
-                list_privil_comboBox.getItems().addAll(RecherchDao.getAllPriviligeByRole(role_selected2));
+//                list_privil_comboBox.
+//                list_privil_comboBox.getItems().addAll(RecherchDao.getAllPriviligeByRole(role_selected2));
                 show_sql.setText("requête  sql utiliser " + q.toString());
-//                list_privil_comboBox.getCheckModel().cl;
             } catch (Exception e) {
                 AlertUtil.ShowAlert("Erreur", e.getLocalizedMessage(), Alert.AlertType.ERROR);
             }
 
         }
     }
-
 
 
 }

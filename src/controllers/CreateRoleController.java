@@ -115,7 +115,7 @@ public class CreateRoleController implements Initializable {
 
             String identified_ = "";
             String identification_ = "";
-            role.setRole_name(" "+cr_role_name.getText()+" ");
+            role.setRole_name(" " + cr_role_name.getText() + " ");
             role.setPassword_(" " + cr_role_password_txt.getText() + " ");
             role.setSchema_(cr_role_schema_txt.getText());
             role.setPackage_(cr_role_package_txt.getText());
@@ -157,9 +157,12 @@ public class CreateRoleController implements Initializable {
     }
 
     private void loadDataIntoChoiceBox() {
+
         observableList.removeAll(observableList);
         observableList.addAll("OUI", "NON");
-        cr_role_identified.getItems().addAll(observableList);
+        if (cr_role_identified != null) {
+            cr_role_identified.getItems().addAll(observableList);
+        }
     }
 
     private boolean validationInput() {

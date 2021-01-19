@@ -31,16 +31,16 @@
                         <Font name="System Bold" size="40.0" />
                     </font>
                 </Text>
-            <TextField fx:id="tf_role" layoutX="75.0" layoutY="110.0" prefHeight="38.0" prefWidth="298.0" promptText="Rôle" />
-            <JFXListView fx:id="list_priv" layoutX="427.0" layoutY="200.0" prefHeight="400.0" prefWidth="279.0" />
-            <TextField fx:id="tf_priv" layoutX="427.0" layoutY="110.0" prefHeight="38.0" prefWidth="279.0" promptText="Privillege" />
-            <JFXButton fx:id="btn_role" layoutX="149.0" layoutY="150.0" onAction="#searchRole" prefHeight="43.0" prefWidth="150.0" style="-fx-background-radius: 20px;" styleClass="btn_dash1" text="Search">
+            <TextField fx:id="tf_role" layoutX="215.0" layoutY="98.0" prefHeight="38.0" prefWidth="298.0" promptText="Rôle" />
+            <JFXListView fx:id="list_priv" layoutX="567.0" layoutY="188.0" prefHeight="400.0" prefWidth="279.0" />
+            <TextField fx:id="tf_priv" layoutX="567.0" layoutY="98.0" prefHeight="38.0" prefWidth="279.0" promptText="Privillege" />
+            <JFXButton fx:id="btn_role" layoutX="289.0" layoutY="138.0" onAction="#searchRole" prefHeight="43.0" prefWidth="150.0" style="-fx-background-radius: 20px;" styleClass="btn_v2_1" text="Search">
                <graphic>
                   <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="25" />
                </graphic>
             </JFXButton>
-            <JFXListView fx:id="list_role" layoutX="75.0" layoutY="200.0" prefHeight="400.0" prefWidth="298.0" />
-            <JFXButton fx:id="btn_priv" layoutX="497.0" layoutY="152.0" onAction="#search_privilige" prefHeight="43.0" prefWidth="150.0" style="-fx-background-radius: 20px;" styleClass="btn_dash1" text="Search">
+            <JFXListView fx:id="list_role" layoutX="215.0" layoutY="188.0" prefHeight="400.0" prefWidth="298.0" />
+            <JFXButton fx:id="btn_priv" layoutX="637.0" layoutY="140.0" onAction="#search_privilige" prefHeight="43.0" prefWidth="150.0" style="-fx-background-radius: 20px;" styleClass="btn_v2_1" text="Search">
                <graphic>
                   <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="25" />
                </graphic>

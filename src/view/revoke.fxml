@@ -6,6 +6,7 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import java.net.URL?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -59,7 +60,10 @@
                                     <Font name="System Bold Italic" size="25.0" />
                                  </font>
                               </Text>
-                              <JFXButton fx:id="btb_revoke_privilige" layoutX="758.0" layoutY="164.0" onAction="#revoke_privi_funct" prefHeight="47.0" prefWidth="203.0" style="-fx-background-radius: 20px;" styleClass="btn_dash1" text="Retirer privilèges" />
+                              <JFXButton fx:id="btb_revoke_privilige" layoutX="758.0" layoutY="164.0" onAction="#revoke_privi_funct" prefHeight="47.0" prefWidth="203.0" style="-fx-background-radius: 20px;" styleClass="btn_v2_1" text="Retirer privilèges">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></JFXButton>
                            </children>
                         </AnchorPane>
                      </content>
@@ -105,7 +109,10 @@
                                      </font>
                                  </JFXRadioButton>
                                  <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" layoutX="1003.0" layoutY="636.0" size="25" text="" textAlignment="CENTER" wrappingWidth="36.64285659790039" />
-                              <JFXButton fx:id="btn_revoke" disable="true" layoutX="852.0" layoutY="394.0" onAction="#revoke_role" prefHeight="47.0" prefWidth="195.0" styleClass="btn_dash1" text="Retirer rôle " AnchorPane.rightAnchor="5.0" />
+                              <JFXButton fx:id="btn_revoke" disable="true" layoutX="852.0" layoutY="394.0" onAction="#revoke_role" prefHeight="47.0" prefWidth="195.0" style="-fx-background-radius: 20px;" styleClass="btn_v2_1" text="Retirer rôle " AnchorPane.rightAnchor="5.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></JFXButton>
                               <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" layoutX="1010.0" layoutY="425.0" size="25" textAlignment="CENTER" wrappingWidth="21.714285850524902" />
                              </children>
                          </AnchorPane>

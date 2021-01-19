@@ -34,10 +34,15 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="controlsfx-8.40.11" level="application" />
-    <orderEntry type="library" name="ojdbc8" level="project" />
-    <orderEntry type="library" name="jfoenix-8.0.10" level="project" />
-    <orderEntry type="library" name="fontawesomefx-8.9" level="project" />
     <orderEntry type="library" name="controlsfx-8.40.14" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../controlsfx-8.40.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

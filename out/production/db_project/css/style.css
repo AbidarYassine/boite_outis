@@ -137,13 +137,13 @@ list-cell:filled:selected:focused, .list-cell:filled:selected {
 
 
 .tab-pane .tab-header-area .tab-header-background {
--fx-opacity : 0 ;
+/*-fx-opacity : 0 ;*/
 }
-.tab-label  {
+/*.tab-label  {
     -fx-text-fill : #243b8c;
 -fx-font-size: 13px;
 -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
-}
+}*/
 
 /* UPDATE V2 */
 
@@ -151,7 +151,13 @@ list-cell:filled:selected:focused, .list-cell:filled:selected {
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
     -fx-font-family: "Arial";
     -fx-fill: linear-gradient(To right,#e21717, #3e0101);
-    -fx-font-size: 20px;
+    -fx-font-size: 25px;
+}
+.text_Title_v2_3{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-fill: linear-gradient(To right,#e21717, #3e0101);
+    -fx-font-size: 30px;
 }
 
 .text_field_v2_1{
@@ -198,4 +204,29 @@ list-cell:filled:selected:focused, .list-cell:filled:selected {
     -fx-font-family: "Arial";
     -fx-text-fill: linear-gradient(to right,#cecece, #ffffff);
     -fx-font-size: 15px;
+}
+
+/*
+style tabPane
+*/
+.tab-header-background{
+    -fx-background-color:
+            linear-gradient(#fed9f0 0%, #000000 20%, #333333 100%),
+            linear-gradient(#ffffff, #cfcfcf),
+            radial-gradient(center 50% 0%, radius 100%,#39484b , #070707);
+    -fx-height:100px;
+
+}
+.tab-label{
+    -fx-text-fill: #fff;
+    -fx-font-size: 15pt;
+}
+.tab{
+    -fx-background-color: derive(#000, 10%);
+    -fx-padding: 5px 20px 5px 20px;
+    -fx-margin:0px 0px 10px 0px;
+}
+
+.tab:selected{
+    -fx-background-color: #e80018;
 }
