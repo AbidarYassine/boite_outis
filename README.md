@@ -1,5 +1,5 @@
 # boite_outis
-Boite outil pour l'administration de base donnée oracle avec JavaFx
+Tool box for oracle database administration with JavaFx
 
 # Fonctionlite
  gestion des role et les privilleges
@@ -8,5 +8,5 @@ Boite outil pour l'administration de base donnée oracle avec JavaFx
     modification role
     grant role to user 
     grant privileege to role ,user,
-    revoke privillege from role,user
+    revoke privillege from role,user and more ...
    
