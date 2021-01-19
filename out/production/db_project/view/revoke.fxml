@@ -80,7 +80,7 @@
                                      </columnResizePolicy>
                                  </TableView>
                                  <JFXListView fx:id="list_role_user" layoutX="590.0" layoutY="76.0" prefHeight="370.0" prefWidth="262.0" />
-                                 <Text layoutX="663.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="les rôles" textAlignment="CENTER" wrappingWidth="144.95068359375">
+                                 <Text fill="#242222" layoutX="663.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="les rôles" textAlignment="CENTER" wrappingWidth="144.95068359375">
                                      <font>
                                          <Font name="System Bold Italic" size="30.0" />
                                      </font>

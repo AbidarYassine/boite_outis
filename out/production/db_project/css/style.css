@@ -134,3 +134,68 @@ list-cell:filled:selected:focused, .list-cell:filled:selected {
     -fx-background-color: #e80018;
     -fx-text-fill: white;
 }
+
+
+.tab-pane .tab-header-area .tab-header-background {
+-fx-opacity : 0 ;
+}
+.tab-label  {
+    -fx-text-fill : #243b8c;
+-fx-font-size: 13px;
+-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+/* UPDATE V2 */
+
+.text_Title_v2_1{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-fill: linear-gradient(To right,#e21717, #3e0101);
+    -fx-font-size: 20px;
+}
+
+.text_field_v2_1{
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(#020202, #1953ab);
+    -fx-font-size: 13px;
+}
+.text_Title_v2_2{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-fill: linear-gradient(To right,#e21717, #3e0101);
+    -fx-font-size: 15px;
+}
+.jfx-radio-button  {
+    -jfx-selected-color:red;
+    -fx-text-fill: linear-gradient(To right,#000000, #3e0101);
+    -fx-font-size: 12px;
+}
+.btn_v2_1{
+    -fx-background-color:
+        linear-gradient(#fed9f0 0%, #0868e9 20%, #011b3f 100%),
+        linear-gradient(#02fb52, #bba204),
+        radial-gradient(center 50% 0%, radius 100%,#e21717 , #837f7f);
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+
+.text_field_v2_2{
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(to right,#cecece, #ffffff);
+    -fx-font-size: 15px;
+}

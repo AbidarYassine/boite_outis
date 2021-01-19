@@ -70,7 +70,7 @@ public class LoginController implements Initializable {
                 thread_login.start();
                 thread_login.join();
                 if (status) {
-                    Main.forward(event, "../view/Accueil.fxml", this.getClass(),"Accueil");
+                    Main.forward(event, "../view/CreateRole.fxml", this.getClass(),"Accueil");
                 } else {
                     System.out.println("not login");
                 }
