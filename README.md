@@ -1,8 +1,8 @@
-# boite_outis
+# Tool Box (DBXTRA)
 Tool box for oracle database administration with JavaFx
 
-# Fonctionlite
- gestion des role et les privilleges
+# Functionality
+ role management and privilleges
  
     creation role
     modification role
